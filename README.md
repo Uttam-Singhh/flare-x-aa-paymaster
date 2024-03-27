@@ -9,6 +9,13 @@ these lines of code are what enable a transaction to be sponsored
 
 **"arka_public_key"** is a testnet public key
 
+There are two modes to choose from while using paymaster ([Check docs for more](https://etherspot.fyi/arka/intro))
+
+1.) sponsor - used in this example (This works by having Arka pay for the transaction fee, you can add more options to it like validUntil / validAfter). (Typically a project will get their own paymaster api key, deposit into the address)
+
+
+2.) erc20 - This works by having the gas fee paid with whatever token is specified.
+
 To check run:
 
 `npm i`
